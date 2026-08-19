@@ -1,0 +1,138 @@
+
+RunspaceId                                            : 81aa8d9a-2e11-4c5a-8a87-95aa18b3629a
+AiAgentNetworkInspection                              : 0
+AiAgentProtection                                     : 0
+AllowDatagramProcessingOnWinServer                    : False
+AllowNetworkProtectionDownLevel                       : False
+AllowNetworkProtectionOnWinServer                     : False
+AllowSwitchToAsyncInspection                          : True
+ApplyDisableNetworkScanningToIOAV                     : False
+AttackSurfaceReductionOnlyExclusions                  : 
+AttackSurfaceReductionRules_Actions                   : {2}
+AttackSurfaceReductionRules_Ids                       : {1081f0b6-3e1e-4f44-acce-816d65112d99}
+AttackSurfaceReductionRules_RuleSpecificExclusions    : {C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe|C:\Program Files (x86)\Microsoft\EdgeWebView\Application\*\msedgewebview2.exe|%ProgramFiles(x86)%\360\360zip\360zip.exe|%ProgramFiles(x86)%\FastStone Image Viewer\FSViewer.exe|%ProgramFiles(x86)%\Microsoft SQL Server Management Studio 18\Common7\PROFILER.EXE|%ProgramFiles(x86)%\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe|%ProgramFiles(x86)%\Microsoft SQL Server Management Studio 19\Common7\IDE\Ssms.exe|%ProgramFiles%\Sublime Text\sublime_text.exe|%localappdata%\Microsoft\EdgeWebView\Application\*\msedgewebview2.exe|%localappdata%\Microsoft\Edge Internal\Application\*\msedgewebview2.exe, C:\NugetCache\*\build\native\windows\x64\ai.exe|D:\NugetCache\*\build\native\windows\x64\ai.exe|E:\NugetCache\*\build\native\windows\x64\ai.exe|F:\NugetCache\*\build\native\windows\x64\ai.exe|%ProgramFiles(x86)%\Articulate\360\Studio\Articulate.Presenter.exe|%ProgramFiles(x86)%\Articulate\360\Studio\CefSharp.BrowserSubprocess.exe|%ProgramFiles(x86)%\Office Timeline\Current\Ines.UserService.Exe|%ProgramFiles(x86)%\Office Timeline\Current\NotificationUI.exe|%ProgramFiles(x86)%\Jedox\Jedox Clients\excel-addin\Jedox.BrowserSubprocess.exe|%SystemDrive%\GitGenDox|%LOCALAPPDATA%\Programs\empower\charts\LiveUpdateHub.exe|%LOCALAPPDATA%\Programs\Made in Office\empower\charts\LiveUpdateHub.exe|%LOCALAPPDATA%\Programs\empower\sync\empowerSync.exe}
+AttackSurfaceReductionRules_RuleSpecificExclusions_Id : {26190899-1602-49e8-8b27-eb1d0a1ce869, D4F940AB-401B-4EFC-AADC-AD5F3C50688A}
+BruteForceProtectionAggressiveness                    : 0
+BruteForceProtectionConfiguredState                   : 1
+BruteForceProtectionExclusions                        : 
+BruteForceProtectionLocalNetworkBlocking              : False
+BruteForceProtectionMaxBlockTime                      : 0
+BruteForceProtectionSkipLearningPeriod                : False
+CheckForSignaturesBeforeRunningScan                   : False
+CloudBlockLevel                                       : 0
+CloudExtendedTimeout                                  : 0
+ComputerID                                            : B0C8F493-490D-448A-86AD-C3D3528B9F2B
+ControlledFolderAccessAllowedApplications             : 
+ControlledFolderAccessDefaultProtectedFolders         : {N/A: Controlled Folder Access is disabled}
+ControlledFolderAccessProtectedFolders                : 
+DefinitionUpdatesChannel                              : 0
+DisableArchiveScanning                                : False
+DisableAutoExclusions                                 : False
+DisableBehaviorMonitoring                             : False
+DisableBlockAtFirstSeen                               : False
+DisableCacheMaintenance                               : False
+DisableCatchupFullScan                                : True
+DisableCatchupQuickScan                               : True
+DisableCoreServiceECSIntegration                      : False
+DisableCoreServiceTelemetry                           : False
+DisableCpuThrottleOnIdleScans                         : True
+DisableDatagramProcessing                             : False
+DisableDnsOverTcpParsing                              : False
+DisableDnsParsing                                     : False
+DisableEmailScanning                                  : True
+DisableFtpParsing                                     : False
+DisableGradualRelease                                 : False
+DisableHttpParsing                                    : False
+DisableInboundConnectionFiltering                     : False
+DisableIOAVProtection                                 : False
+DisableNetworkProtectionPerfTelemetry                 : False
+DisablePrivacyMode                                    : False
+DisableQuicParsing                                    : True
+DisableRdpParsing                                     : False
+DisableRealtimeMonitoring                             : False
+DisableRemovableDriveScanning                         : True
+DisableRestorePoint                                   : True
+DisableScanningMappedNetworkDrivesForFullScan         : True
+DisableScanningNetworkFiles                           : False
+DisableScriptScanning                                 : False
+DisableSmtpParsing                                    : False
+DisableSshParsing                                     : False
+DisableTamperProtection                               : False
+DisableTlsParsing                                     : False
+EnableControlledFolderAccess                          : 0
+EnableConvertWarnToBlock                              : False
+EnableDnsSinkhole                                     : True
+EnableFileHashComputation                             : False
+EnableFullScanOnBatteryPower                          : False
+EnableLowCpuPriority                                  : False
+EnableNetworkProtection                               : 1
+EnableUdpReceiveOffload                               : False
+EnableUdpSegmentationOffload                          : False
+EngineUpdatesChannel                                  : 0
+ExclusionExtension                                    : 
+ExclusionIpAddress                                    : 
+ExclusionPath                                         : 
+ExclusionProcess                                      : 
+ForceUseProxyOnly                                     : False
+HideExclusionsFromLocalUsers                          : True
+HighThreatDefaultAction                               : 0
+IntelTDTEnabled                                       : False
+LowThreatDefaultAction                                : 0
+MAPSReporting                                         : 2
+MeteredConnectionUpdates                              : False
+ModerateThreatDefaultAction                           : 0
+NetworkProtectionReputationMode                       : 0
+OobeEnableRtpAndSigUpdate                             : False
+PerformanceModeStatus                                 : 1
+PlatformUpdatesChannel                                : 0
+ProxyBypass                                           : 
+ProxyPacUrl                                           : 
+ProxyServer                                           : 
+PUAProtection                                         : 2
+QuarantinePurgeItemsAfterDelay                        : 90
+QuickScanIncludeExclusions                            : 0
+RandomizeScheduleTaskTimes                            : True
+RealTimeScanDirection                                 : 0
+RemediationScheduleDay                                : 0
+RemediationScheduleTime                               : 02:00:00
+RemoteEncryptionProtectionAggressiveness              : 2
+RemoteEncryptionProtectionConfiguredState             : 1
+RemoteEncryptionProtectionExclusions                  : 
+RemoteEncryptionProtectionMaxBlockTime                : 15
+RemoveScanningThreadPoolCap                           : False
+ReportDynamicSignatureDroppedEvent                    : False
+ReportingAdditionalActionTimeOut                      : 10080
+ReportingCriticalFailureTimeOut                       : 10080
+ReportingNonCriticalTimeOut                           : 1440
+ScanAvgCPULoadFactor                                  : 50
+ScanOnlyIfIdleEnabled                                 : True
+ScanParameters                                        : 1
+ScanPurgeItemsAfterDelay                              : 15
+ScanScheduleDay                                       : 0
+ScanScheduleOffset                                    : 120
+ScanScheduleQuickScanTime                             : 00:00:00
+ScanScheduleTime                                      : 02:00:00
+SchedulerRandomizationTime                            : 4
+ServiceHealthReportInterval                           : 60
+SevereThreatDefaultAction                             : 0
+SharedSignaturesPath                                  : 
+SharedSignaturesPathUpdateAtScheduledTimeOnly         : False
+SignatureAuGracePeriod                                : 0
+SignatureBlobFileSharesSources                        : 
+SignatureBlobUpdateInterval                           : 60
+SignatureDefinitionUpdateFileSharesSources            : 
+SignatureDisableUpdateOnStartupWithoutEngine          : False
+SignatureFallbackOrder                                : MicrosoftUpdateServer|MMPC
+SignatureFirstAuGracePeriod                           : 120
+SignatureScheduleDay                                  : 8
+SignatureScheduleTime                                 : 01:45:00
+SignatureUpdateCatchupInterval                        : 1
+SignatureUpdateInterval                               : 0
+SubmitSamplesConsent                                  : 1
+ThreatIDDefaultAction_Actions                         : 
+ThreatIDDefaultAction_Ids                             : 
+ThrottleForScheduledScanOnly                          : True
+TrustLabelProtectionStatus                            : 0
+UILockdown                                            : False
+UnknownThreatDefaultAction                            : 0
+
