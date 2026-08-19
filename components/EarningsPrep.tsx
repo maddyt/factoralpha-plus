@@ -1,33 +1,33 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-export function EarningsPrep({ projectId, userId }) {
-  const [ticker, setTicker] = useState("");
-  const [quarter, setQuarter] = useState("");
+export function EarningsPrep({ projectId, userId }: { projectId: string; userId: string }) {
+  const [ticker, setTicker] = useState('');
+  const [quarter, setQuarter] = useState('');
   const [question, setQuestion] = useState(
-    "What should I focus on for the upcoming earnings call?"
+    'What should I focus on for the upcoming earnings call?'
   );
-  const [brief, setBrief] = useState(null);
+  const [brief, setBrief] = useState<any>(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   async function runPrep() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("/api/earnings-prep", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId, projectId, ticker, quarter, question }),
+      const res = await fetch('/api/earnings-prep', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId, projectId, ticker, quarter, question })
       });
       const json = await res.json();
       if (res.ok) {
         setBrief(json.brief?.brief ?? json.brief);
       } else {
-        setError(json.error || "Unknown error");
+        setError(json.error || 'Unknown error');
       }
-    } catch (e) {
+    } catch (e: any) {
       setError(e.message);
     } finally {
       setLoading(false);
@@ -64,7 +64,7 @@ export function EarningsPrep({ projectId, userId }) {
         disabled={loading}
         className="rounded bg-indigo-500 px-4 py-2 text-sm font-medium"
       >
-        {loading ? "Running earnings prep…" : "Run earnings prep"}
+        {loading ? 'Running earnings prep…' : 'Run earnings prep'}
       </button>
 
       {error && <p className="text-sm text-red-400">{error}</p>}
@@ -79,9 +79,9 @@ export function EarningsPrep({ projectId, userId }) {
           <section>
             <h3 className="font-semibold">Key Numbers</h3>
             <ul className="list-disc pl-5">
-              {brief.key_numbers?.map((k, idx) => (
+              {brief.key_numbers?.map((k: any, idx: number) => (
                 <li key={idx}>
-                  <span className="font-medium">{k.label}:</span> {k.current} (prior: {k.prior}) —{" "}
+                  <span className="font-medium">{k.label}:</span> {k.current} (prior: {k.prior}) —{' '}
                   {k.comment}
                 </li>
               ))}
@@ -94,7 +94,7 @@ export function EarningsPrep({ projectId, userId }) {
               <div>
                 <p className="font-medium">Drivers</p>
                 <ul className="list-disc pl-5">
-                  {brief.drivers_and_risks?.drivers?.map((d, idx) => (
+                  {brief.drivers_and_risks?.drivers?.map((d: string, idx: number) => (
                     <li key={idx}>{d}</li>
                   ))}
                 </ul>
@@ -102,7 +102,7 @@ export function EarningsPrep({ projectId, userId }) {
               <div>
                 <p className="font-medium">Risks</p>
                 <ul className="list-disc pl-5">
-                  {brief.drivers_and_risks?.risks?.map((r, idx) => (
+                  {brief.drivers_and_risks?.risks?.map((r: string, idx: number) => (
                     <li key={idx}>{r}</li>
                   ))}
                 </ul>
@@ -113,12 +113,12 @@ export function EarningsPrep({ projectId, userId }) {
           <section>
             <h3 className="font-semibold">Scenarios</h3>
             <ul className="space-y-2">
-              {brief.scenarios?.map((s, idx) => (
+              {brief.scenarios?.map((s: any, idx: number) => (
                 <li key={idx} className="rounded bg-slate-800 p-2">
                   <p className="font-medium">{s.name}</p>
                   <p>{s.description}</p>
                   <p className="mt-1 text-xs text-slate-300">
-                    Watch items: {s.key_watch_items?.join(", ")}
+                    Watch items: {s.key_watch_items?.join(', ')}
                   </p>
                 </li>
               ))}
